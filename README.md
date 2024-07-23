@@ -10,7 +10,7 @@ A calculadora oferece um menu interativo onde o usuário pode escolher a operaç
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/Calculadora-basica.git
+   git clone https://github.com/Vitor-coder-eng/Calculadora-basica.git
 
 ## Uso
 
