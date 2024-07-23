@@ -1,41 +1,50 @@
-def somar(a, b):
+def soma(a, b):
     return a + b
 
-def subtrair(a, b):
+def subtracao(a, b):
     return a - b
 
-def multiplicar(a, b):
+def multiplicacao(a, b):
     return a * b
 
-def dividir(a, b):
+def divisao(a, b):
     if b != 0:
         return a / b
     else:
-        return "Erro: Divisão por zero"
+        return "Erro: Divisão por zero!"
 
 def main():
-    print("Calculadora Básica")
-    print("Selecione a operação:")
-    print("1. Soma")
-    print("2. Subtração")
-    print("3. Multiplicação")
-    print("4. Divisão")
+    while True:
+        print("Selecione a operação:")
+        print("1. Soma")
+        print("2. Subtração")
+        print("3. Multiplicação")
+        print("4. Divisão")
+        print("5. Sair")
 
-    escolha = input("Digite a escolha (1/2/3/4): ")
+        escolha = input("Digite sua escolha (1/2/3/4/5): ")
 
-    num1 = float(input("Digite o primeiro número: "))
-    num2 = float(input("Digite o segundo número: "))
+        if escolha == '5':
+            print("Encerrando o programa. Até logo!")
+            break
 
-    if escolha == '1':
-        print(f"{num1} + {num2} = {somar(num1, num2)}")
-    elif escolha == '2':
-        print(f"{num1} - {num2} = {subtrair(num1, num2)}")
-    elif escolha == '3':
-        print(f"{num1} * {num2} = {multiplicar(num1, num2)}")
-    elif escolha == '4':
-        print(f"{num1} / {num2} = {dividir(num1, num2)}")
-    else:
-        print("Escolha inválida")
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+
+        if escolha == '1':
+            print(f"Resultado: {num1} + {num2} = {soma(num1, num2)}")
+
+        elif escolha == '2':
+            print(f"Resultado: {num1} - {num2} = {subtracao(num1, num2)}")
+
+        elif escolha == '3':
+            print(f"Resultado: {num1} * {num2} = {multiplicacao(num1, num2)}")
+
+        elif escolha == '4':
+            print(f"Resultado: {num1} / {num2} = {divisao(num1, num2)}")
+
+        else:
+            print("Opção inválida!")
 
 if __name__ == "__main__":
     main()
