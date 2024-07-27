@@ -48,3 +48,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+import math
+
+def calcular_raiz_quadrada(valor):
+    return math.sqrt(valor)
